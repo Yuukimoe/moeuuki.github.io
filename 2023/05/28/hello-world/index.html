@@ -2277,7 +2277,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1685278378677),
+    lastupdate: new Date(1685278538601),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2775,17 +2775,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <p>顶部导航栏选择 <strong>Environments</strong> 下方找到 <strong>Add directories to the PATH environment variable</strong>, 为 <code>hexo</code> 命令添加环境变量</p>
 <p>Shell command 详细配置参考下面的图片 👇🏻</p>
+<blockquote>
+<p>这里需要将命令中顶部导航栏 <strong>Output</strong> -&gt; <strong>Output channel for stdout</strong> 设置为 Notification balloon</p>
+</blockquote>
 <p><img src="/../assets/hello-world/image-20230528_203843318.png" class="lazyload" data-srcset="/../assets/hello-world/image-20230528_203843318.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><br><img src="/../assets/hello-world/image-20230528_203719961.png" class="lazyload" data-srcset="/../assets/hello-world/image-20230528_203719961.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
 <p>使用方法: Command + P 打开命令面板, 输入 hexo server, 回车后键入对应操作即可</p>
-<p>%%## 3. 部署博客</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<pre><code class="diff">+ deploy:
-+   type: git
-+   repo: https://github.com/moeuuki/moeuuki.github.io
-+   branch: main
-```%%
-</code></pre>
 
   </div>
   
