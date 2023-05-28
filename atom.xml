@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yuuki&#39;s blog</title>
+  
+  <subtitle>subtitle</subtitle>
+  <link href="https://blog.uuki.moe/atom.xml" rel="self"/>
+  
+  <link href="https://blog.uuki.moe/"/>
+  <updated>2023-05-28T06:01:58.272Z</updated>
+  <id>https://blog.uuki.moe/</id>
+  
+  <author>
+    <name>yuuki</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://blog.uuki.moe/2023/05/28/hello-world/"/>
+    <id>https://blog.uuki.moe/2023/05/28/hello-world/</id>
+    <published>2023-05-27T16:00:00.000Z</published>
+    <updated>2023-05-28T06:01:58.272Z</updated>
+    
+    <content type="html"><![CDATA[<p>欢迎来到我的 blog, 这是第一个帖子, 这里的内容关联着这个站点的诞生。</p><span id="more"></span><h3 id="1-博客的诞生"><a href="#1-博客的诞生" class="headerlink" title="1 - 博客的诞生"></a>1 - 博客的诞生</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">## 博客初始化</span></span><br><span class="line"><span class="built_in">cd</span> ~/blog</span><br><span class="line">hexo init</span><br><span class="line">git init .</span><br><span class="line"></span><br><span class="line"><span class="comment">## 主题配置</span></span><br><span class="line"><span class="comment"># https://github.com/volantis-x/hexo-theme-volantis/</span></span><br><span class="line">git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/volantis</span><br><span class="line"><span class="built_in">cp</span> themes/volantis/_config.yml ./_config.volantis.yml</span><br><span class="line">code .</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="2-常用布局"><a href="#2-常用布局" class="headerlink" title="2 - 常用布局"></a>2 - 常用布局</h3><figure class="highlight diff"><figcaption><span>_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+ 131 - navbar: # 导航栏</span></span><br><span class="line"><span class="deletion">- 171 - cover: # 头图</span></span><br><span class="line"><span class="addition">+ 214 - pages: # 友链页面配置</span></span><br><span class="line"><span class="addition">+ 387 - comments: # 评论</span></span><br><span class="line"><span class="addition">+ 563 - sidebar: # 侧边栏</span></span><br><span class="line"><span class="addition">+ 728 - site_footer: # 页脚</span></span><br><span class="line"><span class="addition">+ 817 - plugins: # 插件</span></span><br><span class="line"><span class="addition">+ 1053 - rightmenus: # 右键菜单</span></span><br></pre></td></tr></table></figure><h3 id="3-拓展插件"><a href="#3-拓展插件" class="headerlink" title="3 -  拓展插件"></a>3 -  拓展插件</h3><div class="tag-plugin users-wrap"></div><div class="tag-plugin users-wrap"></div><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">## 音乐播放器</span></span><br><span class="line"><span class="comment"># https://aplayer.js.org/#/zh-Hans/</span></span><br><span class="line">npm install aplayer --save</span><br><span class="line"></span><br><span class="line"><span class="comment">## Hexo 搜索</span></span><br><span class="line"><span class="comment"># https://github.com/alexbruno/hexo-generator-json-content</span></span><br><span class="line">npm i -S hexo-generator-json-content</span><br><span class="line"></span><br><span class="line"><span class="comment">## Highlight</span></span><br><span class="line"><span class="comment"># https://highlightjs.org/static/demo/</span></span><br><span class="line"><span class="comment"># https://www.jsdelivr.com/package/npm/@highlightjs/cdn-assets?path=styles&amp;tab=files</span></span><br><span class="line">暂时没有启用, 而是使用 Hexo 内置的 Highlight</span><br><span class="line"></span><br><span class="line"><span class="comment">## RSS</span></span><br><span class="line">npm install hexo-generator-feed --save</span><br><span class="line">本地文件 atom.xml 会存在乱码, 部署到远程就没问题了</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;欢迎来到我的 blog, 这是第一个帖子, 这里的内容关联着这个站点的诞生。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="cate-test-1" scheme="https://blog.uuki.moe/categories/cate-test-1/"/>
+    
+    
+    <category term="tag-test-1" scheme="https://blog.uuki.moe/tags/tag-test-1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>123456</title>
+    <link href="https://blog.uuki.moe/2023/05/28/123-456/"/>
+    <id>https://blog.uuki.moe/2023/05/28/123-456/</id>
+    <published>2023-05-27T16:00:00.000Z</published>
+    <updated>2023-05-28T06:02:56.336Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Heading-1"><a href="#Heading-1" class="headerlink" title="Heading 1"></a>Heading 1</h1><h2 id="Heading-2"><a href="#Heading-2" class="headerlink" title="Heading 2"></a>Heading 2</h2><h3 id="Heading-3"><a href="#Heading-3" class="headerlink" title="Heading 3"></a>Heading 3</h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Heading-1&quot;&gt;&lt;a href=&quot;#Heading-1&quot; class=&quot;headerlink&quot; title=&quot;Heading 1&quot;&gt;&lt;/a&gt;Heading 1&lt;/h1&gt;&lt;h2 id=&quot;Heading-2&quot;&gt;&lt;a href=&quot;#Heading-2&quot; class</summary>
+      
+    
+    
+    
+    <category term="cate-test-1" scheme="https://blog.uuki.moe/categories/cate-test-1/"/>
+    
+    
+    <category term="tag-test" scheme="https://blog.uuki.moe/tags/tag-test/"/>
+    
+  </entry>
+  
+</feed>
