@@ -2204,7 +2204,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // 默认配置
     opt = {
       top: ele.getBoundingClientRect().top + document.documentElement.scrollTop,
-      behavior: "smooth"
+      behavior: "instant"
     }
     // 定义配置
     if ("top" in option) {
@@ -2277,7 +2277,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1685374517345),
+    lastupdate: new Date(1685397822761),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2701,13 +2701,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>Welcome to my blog. 👋 这是第一个帖子, 记录了这个站点的诞生。</p>
 <span id="more"></span>
 
-<div class="timeline">
-<div class="timenode"><div class="meta"><p><p>2023-05-28</p>
-</p></div><div class="body"><p>文章发布</p></div></div>
-
-<div class="timenode"><div class="meta"><p><p>2023-05-29</p>
-</p></div><div class="body"><p>补充 <a href="#2-%E9%9B%86%E6%88%90-Obsidian">2. 集成 Obsidian</a> 部分内容</p></div></div>
-</div>
+<details blue><summary> TimeLog </summary>
+              <div class='content'>
+              <div class="timeline"><div class="timenode"><div class="meta"><p><p>2023-05-28</p></p></div><div class="body"><p>编辑文章, 发布博客 (<a target="_blank" rel="noopener" href="https://uuki.blog.moe/">https://uuki.blog.moe</a>)</p></div></div><div class="timenode"><div class="meta"><p><p>2023-05-29</p></p></div><div class="body"><p>补充<a href="#2-%E9%9B%86%E6%88%90-Obsidian">集成 Obsidian</a> 部分内容</p></div></div><div class="timenode"><div class="meta"><p><p>2023-05-30</p></p></div><div class="body"><ol><li><p>关闭光标样式</p><figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">custom_css:</span></span><br><span class="line">	<span class="attr">cursor:</span></span><br><span class="line">		<span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure></li><li><p>关闭平滑滚动</p><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">...</span></span><br><span class="line"><span class="attr">scroll_smooth:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">...</span></span><br></pre></td></tr></table></figure></li></ol></div></div></div>
+              </div>
+            </details>
 
 <h2 id="1-初始化-Hexo-blog"><a href="#1-初始化-Hexo-blog" class="headerlink" title="1. 初始化 Hexo blog"></a>1. 初始化 Hexo blog</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">## 初始化</span></span><br><span class="line"><span class="built_in">cd</span> ~/blog</span><br><span class="line">hexo init</span><br><span class="line">git init .</span><br><span class="line"></span><br><span class="line"><span class="comment">## 安装主题</span></span><br><span class="line"><span class="comment"># https://github.com/volantis-x/hexo-theme-volantis/</span></span><br><span class="line">git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/volantis</span><br><span class="line"><span class="built_in">cp</span> themes/volantis/_config.yml ./_config.volantis.yml</span><br></pre></td></tr></table></figure>
 
