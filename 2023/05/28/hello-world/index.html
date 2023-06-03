@@ -2277,7 +2277,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1685663283134),
+    lastupdate: new Date(1685787080986),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2285,7 +2285,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/4.0.31/fancybox.umd.min.js'
     },
     sidebar: {
-      for_page: ["category","tagcloud","lastupdate","webinfo"],
+      for_page: ["blogger","category","tagcloud","lastupdate","webinfo"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2644,10 +2644,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <div class='new-meta-item category'>
     <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
-    <a class="category-link" href="/categories/dev/">dev</a>
+    <a class="category-link" href="/categories/env/">env</a>
     
       <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-        <a href="/categories/dev/" itemprop="url"><span itemprop="name">dev</span></a>
+        <a href="/categories/env/" itemprop="url"><span itemprop="name">env</span></a>
       </span>
     
   </div>
@@ -2707,6 +2707,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               </div>
             </details>
 
+<p><strong>常用链接</strong></p>
+<ul>
+<li>Volantis 主题文档: <a target="_blank" rel="noopener" href="https://volantis.js.org/">https://volantis.js.org/</a></li>
+</ul>
 <h2 id="1-初始化-Hexo-blog"><a href="#1-初始化-Hexo-blog" class="headerlink" title="1. 初始化 Hexo blog"></a>1. 初始化 Hexo blog</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">## 初始化</span></span><br><span class="line"><span class="built_in">cd</span> ~/blog</span><br><span class="line">hexo init</span><br><span class="line">git init .</span><br><span class="line"></span><br><span class="line"><span class="comment">## 安装主题</span></span><br><span class="line"><span class="comment"># https://github.com/volantis-x/hexo-theme-volantis/</span></span><br><span class="line">git submodule add https://github.com/volantis-x/hexo-theme-volantis.git themes/volantis</span><br><span class="line"><span class="built_in">cp</span> themes/volantis/_config.yml ./_config.volantis.yml</span><br></pre></td></tr></table></figure>
 
 <h3 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h3><figure class="highlight diff"><figcaption><span>_config.volantis.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+ 131 - navbar: # 导航栏</span></span><br><span class="line"><span class="deletion">- 171 - cover: # 头图</span></span><br><span class="line"><span class="addition">+ 214 - pages: # 友链页面配置</span></span><br><span class="line"><span class="addition">+ 387 - comments: # 评论</span></span><br><span class="line"><span class="addition">+ 563 - sidebar: # 侧边栏</span></span><br><span class="line"><span class="addition">+ 728 - site_footer: # 页脚</span></span><br><span class="line"><span class="addition">+ 817 - plugins: # 插件</span></span><br><span class="line"><span class="addition">+ 1053 - rightmenus: # 右键菜单</span></span><br></pre></td></tr></table></figure>
@@ -2742,7 +2746,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>创建模板文件</strong></p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~/blog</span><br><span class="line"><span class="built_in">mkdir</span> template</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## template/post.md</span></span><br><span class="line">title: &lt;% tp.file.title %&gt;</span><br><span class="line">date: &lt;% tp.date.now(&quot;YYYY-MM-DD HH:mm:ss&quot;) %&gt;</span><br><span class="line">author: Yuuki</span><br><span class="line">updated: </span><br><span class="line">cover: </span><br><span class="line">tags: [&lt;% tp.system.prompt(&quot;Tag&quot;, &quot;&quot;) %&gt;]</span><br><span class="line">categories: [&lt;% tp.system.prompt(&quot;Category&quot;, &quot;&quot;) %&gt;]</span><br><span class="line"></span><br><span class="line"><span class="section">## template/timeNow.md</span></span><br><span class="line">&lt;% tp.date.now(&quot;YYYY-MM-DD HH:mm:ss&quot;) %&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">## template/title.md</span></span><br><span class="line">&lt;% tp.file.title %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## template/post.md</span></span><br><span class="line">title: &lt;% tp.file.title %&gt;</span><br><span class="line">date: &lt;% tp.date.now(&quot;YYYY-MM-DD HH:mm:ss&quot;) %&gt;</span><br><span class="line">author: Yuuki</span><br><span class="line">updated: </span><br><span class="line">headimg: </span><br><span class="line">description: </span><br><span class="line">tags: [&lt;% tp.system.prompt(&quot;Tag&quot;, &quot;&quot;) %&gt;]</span><br><span class="line">categories: [&lt;% tp.system.prompt(&quot;Category&quot;, &quot;&quot;) %&gt;]</span><br><span class="line"></span><br><span class="line"><span class="section">## template/timeNow.md</span></span><br><span class="line">&lt;% tp.date.now(&quot;YYYY-MM-DD HH:mm:ss&quot;) %&gt;</span><br><span class="line"></span><br><span class="line"><span class="section">## template/title.md</span></span><br><span class="line">&lt;% tp.file.title %&gt;</span><br></pre></td></tr></table></figure>
 
 <p><strong>修改配置文件</strong></p>
 <ul>
@@ -2892,7 +2896,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2023/05/31/VAmPI-The-Vulnerable-API/'>
+        <a class='prev' href='/2023/05/31/VAmPI-sql-injection/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Lab - VAmPI - 环境搭建 & SQL Injection</p>
           <p class='content'>VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev...</p>
         </a>
@@ -3980,7 +3984,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","sameAs":["https://github.com/volantis-x"],"description":"CyberSec | WebSec | Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.uuki.moe/","name":"Yuuki's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.uuki.moe/categories/dev/","name":"dev"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.uuki.moe/2023/05/28/hello-world/","name":"Hello World"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yuuki's blog","url":"https://blog.uuki.moe/","keywords":"Security blog","description":"CyberSec | WebSec | Blog","author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","description":"CyberSec | WebSec | Blog"},"publisher":{"@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.uuki.moe?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hello World","description":"Welcome to my blog. 👋 这是第一个帖子, 记录了这个站点的诞生。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.uuki.moe/2023/05/28/hello-world/"},"author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/"},"publisher":{"@type":"Organization","name":"Yuuki's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.uuki.moe/2023/05/28/hello-world/","wordCount":43,"datePublished":"2023-05-27T16:00:00.000Z","dateModified":"2023-05-28T12:49:15.000Z","articleSection":"dev","keywords":"blog","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","sameAs":["https://github.com/volantis-x"],"description":"CyberSec | WebSec | Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.uuki.moe/","name":"Yuuki's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.uuki.moe/categories/env/","name":"env"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.uuki.moe/2023/05/28/hello-world/","name":"Hello World"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yuuki's blog","url":"https://blog.uuki.moe/","keywords":"Security blog","description":"CyberSec | WebSec | Blog","author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","description":"CyberSec | WebSec | Blog"},"publisher":{"@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.uuki.moe?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Hello World","description":"Welcome to my blog. 👋 这是第一个帖子, 记录了这个站点的诞生。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.uuki.moe/2023/05/28/hello-world/"},"author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/"},"publisher":{"@type":"Organization","name":"Yuuki's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.uuki.moe/2023/05/28/hello-world/","wordCount":43,"datePublished":"2023-05-27T16:00:00.000Z","dateModified":"2023-05-28T12:49:15.000Z","articleSection":"env","keywords":"blog","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
