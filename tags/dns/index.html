@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blog.uuki.moe/categories/env/"/>
+  <link rel="canonical" href="https://blog.uuki.moe/tags/dns/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,13 +35,13 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Yuuki's blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Category: env - Yuuki's blog</title>
+  <title>Tag: dns - Yuuki's blog</title>
   <meta name="keywords" content="Security blog">
   <meta desc name="description" content="CyberSec | WebSec | Blog - yuuki - Yuuki's blog">
   
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yuuki&#39;s blog">
-<meta property="og:url" content="https://blog.uuki.moe/categories/env/index.html">
+<meta property="og:url" content="https://blog.uuki.moe/tags/dns/index.html">
 <meta property="og:site_name" content="Yuuki&#39;s blog">
 <meta property="og:description" content="CyberSec | WebSec | Blog">
 <meta property="og:locale" content="zh_CN">
@@ -107,7 +107,7 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: Helvetica, "PingFang SC", "Microsoft YaHei", UbuntuMono, "Varela Round", Arial, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
@@ -1127,7 +1127,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: Helvetica, "PingFang SC", "Microsoft YaHei", UbuntuMono, "Varela Round", Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 64px;
   white-space: normal;
@@ -2275,7 +2275,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1685792699221),
+    lastupdate: new Date(1686533512694),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2608,8 +2608,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
-          
-        
       
     
     
@@ -2617,7 +2615,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.uuki.moe/2023/06/03/Install-kali-linux/">
+  <link itemprop="mainEntityOfPage" href="https://blog.uuki.moe/2023/06/12/domain_name_server_works/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Yuuki's blog">
   </span>
@@ -2635,19 +2633,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
     <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/03/Install-kali-linux/"  itemprop="url">
-        MacOS 下 Kali Linux 的安装配置和更新
+      <a href="/2023/06/12/domain_name_server_works/"  itemprop="url">
+        域名系统 (DNS) 的工作原理和相关示例
       </a>
     </h2>
   
   <div class='md article-desc' itemprop="articleBody">
     
       
-        各文件下载地址
-
-VMware Fusion 下载地址: https://customerconnect.vmware.com/evalcenter?p=fusion-player-personal-13
-镜像下载地址: https://www.kali.org/get-kali/#kali-installer-images
-更新 Kali Linux: https://www.kali.o...
+        1、根域名 (Root Domain)根域名是互联网域名系统 (DNS) 中最高级别的域名。它位于域名层次结构的顶部, 没有任何上级域名。根域名在域名系统中使用一个点 (.) 来表示, 它是整个域名系统的起点。根域名由 Internet Corporation for Assigned Names and Numbers (ICANN) 进行管理, 并确保全球的根域名服务器之间的同步和一致性...
       
     
   </div>
@@ -2655,81 +2649,20 @@ VMware Fusion 下载地址: https://customerconnect.vmware.com/evalcenter?p=fusi
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time itemprop="dateCreated datePublished" datetime="2023-06-03T05:44:47+08:00">2023-06-03</time>
+        <time itemprop="dateCreated datePublished" datetime="2023-06-12T07:36:37+08:00">2023-06-12</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/categories/env/">env</a>
+          <a class="category-link" href="/categories/net/">net</a>
           
             <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/env/" itemprop="url"><span itemprop="name">env</span></a>
+              <a href="/categories/net/" itemprop="url"><span itemprop="name">net</span></a>
             </span>
           
         
       </div>
       
         <div>
-          <a class='readmore' href='/2023/06/03/Install-kali-linux/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.uuki.moe/2023/05/28/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Yuuki's blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Yuuki's blog">
-    <meta itemprop="description" content="CyberSec | WebSec | Blog">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/05/28/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>Welcome to my blog. 👋 这是第一个帖子, 记录了这个站点的诞生。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-05-28T00:00:00+08:00">2023-05-28</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/env/">env</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/env/" itemprop="url"><span itemprop="name">env</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/05/28/hello-world/' itemprop="url">
+          <a class='readmore' href='/2023/06/12/domain_name_server_works/' itemprop="url">
             阅读全文
           </a>
         </div>
@@ -2802,9 +2735,19 @@ VMware Fusion 下载地址: https://customerconnect.vmware.com/evalcenter?p=fusi
       <ul class="entry navigation">
         
           <li><a class="flat-box"
-            title="/categories/env/" href="/categories/env/"
-            active-action="action-categoriesenv"
-            ><div class='name'>env</div><div class='badge'>(2)</div></a></li>
+            title="/categories/dev/" href="/categories/dev/"
+            active-action="action-categoriesdev"
+            ><div class='name'>dev</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/net/" href="/categories/net/"
+            active-action="action-categoriesnet"
+            ><div class='name'>net</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/ops/" href="/categories/ops/"
+            active-action="action-categoriesops"
+            ><div class='name'>ops</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/sec/" href="/categories/sec/"
@@ -2834,7 +2777,7 @@ VMware Fusion 下载地址: https://customerconnect.vmware.com/evalcenter?p=fusi
 
 
     <div class='content'>
-      <a href="/tags/Kali-Linux/" style="font-size: 14px; color: #999">Kali Linux</a> <a href="/tags/Pentesting-API/" style="font-size: 14px; color: #999">Pentesting API</a> <a href="/tags/blog/" style="font-size: 14px; color: #999">blog</a>
+      <a href="/tags/Kali-Linux/" style="font-size: 14px; color: #999">Kali Linux</a> <a href="/tags/Pentesting-API/" style="font-size: 14px; color: #999">Pentesting API</a> <a href="/tags/blog/" style="font-size: 14px; color: #999">blog</a> <a href="/tags/dns/" style="font-size: 14px; color: #999">dns</a>
     </div>
   </section>
 
@@ -2857,7 +2800,7 @@ VMware Fusion 下载地址: https://customerconnect.vmware.com/evalcenter?p=fusi
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2023/06/03/Install-kali-linux/"><div class="item"><time>2023-06-03</time><span>env</span></div><span>MacOS 下 Kali Linux 的安装配置和更新</span></a></li><li><a class="widget-last" href="/2023/05/31/VAmPI-sql-injection/"><div class="item"><time>2023-06-03</time><span>sec</span></div><span>Lab - VAmPI - 环境搭建 & SQL Injection</span></a></li><li><a class="widget-last" href="/2023/05/28/hello-world/"><div class="item"><time>2023-05-28</time><span>env</span></div><span>Hello World</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2023/05/31/VAmPI-sql-injection/"><div class="item"><time>2023-06-12</time><span>sec</span></div><span>Lab - VAmPI - SQL Injection</span></a></li><li><a class="widget-last" href="/2023/06/12/domain_name_server_works/"><div class="item"><time>2023-06-12</time><span>net</span></div><span>域名系统 (DNS) 的工作原理和相关示例</span></a></li><li><a class="widget-last" href="/2023/06/03/Install-kali-linux/"><div class="item"><time>2023-06-12</time><span>ops</span></div><span>MacOS 下 Kali Linux 的安装配置和更新</span></a></li><li><a class="widget-last" href="/2023/05/28/hello-world/"><div class="item"><time>2023-05-28</time><span>dev</span></div><span>Hello World</span></a></li></ul>
   </div>
 </section>
 
@@ -2882,7 +2825,7 @@ VMware Fusion 下载地址: https://customerconnect.vmware.com/evalcenter?p=fusi
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>3 篇</div>
+          <div>4 篇</div>
         </div>
       
 
@@ -2920,7 +2863,7 @@ VMware Fusion 下载地址: https://customerconnect.vmware.com/evalcenter?p=fusi
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2023-06-03 日</div>
+          <div id="last-update-show">2023-06-12 日</div>
         </div>
       
     </div>
@@ -3950,7 +3893,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","sameAs":["https://github.com/volantis-x"],"description":"CyberSec | WebSec | Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.uuki.moe/","name":"Yuuki's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.uuki.moe/categories/env/","name":"env"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yuuki's blog","url":"https://blog.uuki.moe/","keywords":"Security blog","description":"CyberSec | WebSec | Blog","author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","description":"CyberSec | WebSec | Blog"},"publisher":{"@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.uuki.moe?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"CyberSec | WebSec | Blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/"},"publisher":{"@type":"Organization","name":"Yuuki's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","sameAs":["https://github.com/volantis-x"],"description":"CyberSec | WebSec | Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.uuki.moe/","name":"Yuuki's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.uuki.moe/tags/dns/","name":"dns"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yuuki's blog","url":"https://blog.uuki.moe/","keywords":"Security blog","description":"CyberSec | WebSec | Blog","author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","description":"CyberSec | WebSec | Blog"},"publisher":{"@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.uuki.moe?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"CyberSec | WebSec | Blog","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/"},"publisher":{"@type":"Organization","name":"Yuuki's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

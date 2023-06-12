@@ -6930,7 +6930,7 @@ pre {
   border-radius: 4px;
   -webkit-border-radius: 4px;
   color: var(--color-text);
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: Helvetica, "PingFang SC", "Microsoft YaHei", UbuntuMono, "Varela Round", Arial, Menlo, Monaco, monospace, sans-serif;
 }
 .aplayer .aplayer-list {
   text-align: left;

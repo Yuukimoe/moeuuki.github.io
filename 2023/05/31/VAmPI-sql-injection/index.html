@@ -35,19 +35,19 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Yuuki's blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Lab - VAmPI - 环境搭建 & SQL Injection - Yuuki's blog</title>
+  <title>Lab - VAmPI - SQL Injection - Yuuki's blog</title>
   <meta name="keywords" content="Pentesting API,Security blog">
   <meta desc name="description" content="VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的... - yuuki - Yuuki's blog">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Lab - VAmPI - 环境搭建 &amp; SQL Injection">
+<meta property="og:title" content="Lab - VAmPI - SQL Injection">
 <meta property="og:url" content="https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/index.html">
 <meta property="og:site_name" content="Yuuki&#39;s blog">
 <meta property="og:description" content="VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https:&#x2F;&#x2F;erev0s.com&#x2F;blog&#x2F;vampi-vulnerable-api-security-testing&#x2F; 可以看到更加全面的介绍。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-05-30T19:50:16.000Z">
-<meta property="article:modified_time" content="2023-06-03T09:38:44.654Z">
+<meta property="article:modified_time" content="2023-06-12T01:31:35.217Z">
 <meta property="article:author" content="yuuki">
 <meta property="article:tag" content="Pentesting API">
 <meta name="twitter:card" content="summary">
@@ -109,7 +109,7 @@ html {
   color: var(--color-text);
   width: 100%;
   height: 100%;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: Helvetica, "PingFang SC", "Microsoft YaHei", UbuntuMono, "Varela Round", Arial, Menlo, Monaco, monospace, sans-serif;
   font-size: 16px;
 }
 html >::-webkit-scrollbar {
@@ -1129,7 +1129,7 @@ button {
 }
 .l_header .nav-sub .title {
   font-weight: bold;
-  font-family: UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: Helvetica, "PingFang SC", "Microsoft YaHei", UbuntuMono, "Varela Round", Arial, Menlo, Monaco, monospace, sans-serif;
   line-height: 1.2;
   max-height: 64px;
   white-space: normal;
@@ -2277,7 +2277,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1685792699221),
+    lastupdate: new Date(1686533512694),
     cdn: {
       izitoast_css: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
       izitoast_js: 'https://cdn.bootcdn.net/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
@@ -2622,7 +2622,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Lab - VAmPI - 环境搭建 & SQL Injection
+        Lab - VAmPI - SQL Injection
       </h1>
       <div class='new-meta-box'>
         
@@ -2794,10 +2794,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-06-03T17:38:44+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-06-12T09:31:35+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2023年6月3日</p>
+    <p>更新于：2023年6月12日</p>
   </a>
 </div>
 
@@ -2823,7 +2823,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/&title=Lab - VAmPI - 环境搭建 & SQL Injection - Yuuki's blog&summary=VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/&title=Lab - VAmPI - SQL Injection - Yuuki's blog&summary=VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。"
           
           >
           
@@ -2835,7 +2835,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/&title=Lab - VAmPI - 环境搭建 & SQL Injection - Yuuki's blog&summary=VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/&title=Lab - VAmPI - SQL Injection - Yuuki's blog&summary=VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。"
           
           >
           
@@ -2847,7 +2847,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/&title=Lab - VAmPI - 环境搭建 & SQL Injection - Yuuki's blog&summary=VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/&title=Lab - VAmPI - SQL Injection - Yuuki's blog&summary=VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。"
           
           >
           
@@ -3980,7 +3980,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","sameAs":["https://github.com/volantis-x"],"description":"CyberSec | WebSec | Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.uuki.moe/","name":"Yuuki's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.uuki.moe/categories/sec/","name":"sec"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/","name":"Lab - VAmPI - 环境搭建 & SQL Injection"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yuuki's blog","url":"https://blog.uuki.moe/","keywords":"Security blog","description":"CyberSec | WebSec | Blog","author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","description":"CyberSec | WebSec | Blog"},"publisher":{"@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.uuki.moe?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Lab - VAmPI - 环境搭建 & SQL Injection","description":"VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/"},"author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/"},"publisher":{"@type":"Organization","name":"Yuuki's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/","wordCount":160,"datePublished":"2023-05-30T19:50:16.000Z","dateModified":"2023-06-03T09:38:44.654Z","articleSection":"sec","keywords":"Pentesting API","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","sameAs":["https://github.com/volantis-x"],"description":"CyberSec | WebSec | Blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.uuki.moe/","name":"Yuuki's blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.uuki.moe/categories/sec/","name":"sec"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/","name":"Lab - VAmPI - SQL Injection"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Yuuki's blog","url":"https://blog.uuki.moe/","keywords":"Security blog","description":"CyberSec | WebSec | Blog","author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/","description":"CyberSec | WebSec | Blog"},"publisher":{"@type":"Organization","name":"Yuuki's blog","url":"https://blog.uuki.moe/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.uuki.moe?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Lab - VAmPI - SQL Injection","description":"VAmPI 是一个具有 OWASP Top 10 漏洞的 REST API 的程序, 可以通过一个开关来控制 API 是否易受攻击, 可以用于测试、学习、教学的目的。在 https://erev0s.com/blog/vampi-vulnerable-api-security-testing/ 可以看到更加全面的介绍。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/"},"author":{"@type":"Person","name":"yuuki","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.uuki.moe/"},"publisher":{"@type":"Organization","name":"Yuuki's blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.uuki.moe/2023/05/31/VAmPI-sql-injection/","wordCount":160,"datePublished":"2023-05-30T19:50:16.000Z","dateModified":"2023-06-12T01:31:35.217Z","articleSection":"sec","keywords":"Pentesting API","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
